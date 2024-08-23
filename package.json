@@ -9,9 +9,14 @@
     "discord-backend"
   ],
   "scripts": {
+    "start": "concurrently \"npm start --prefix discord-frontend\" \"npm start --prefix discord-backend\"",
+    "build": "npm run build --prefix discord-frontend",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC" 
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
