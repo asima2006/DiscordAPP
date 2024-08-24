@@ -2,7 +2,7 @@ const express = require("express");
 const http = require("http");
 const cors = require("cors");
 const mongoose = require("mongoose");
-require("dotenv").config();
+require("dotenv").config({ path: '../.env' });
 
 const socketServer = require("./socketServer");
 const authRoutes = require("./routes/authRoutes");
