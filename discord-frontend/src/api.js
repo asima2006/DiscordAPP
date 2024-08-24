@@ -3,7 +3,7 @@ import { logout } from "./shared/utils/auth";
 
 const apiClient = axios.create({
   baseURL: "https://discord-backend-xc1o.onrender.com",
-  timeout: 60000,
+  timeout: 1200000,
 });
 
 apiClient.interceptors.request.use(
