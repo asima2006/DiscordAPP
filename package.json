@@ -9,7 +9,7 @@
     "discord-backend"
   ],
   "scripts": {
-    "start": "npm start --prefix discord-frontend",
+    "start": "concurrently \"npm start --prefix discord-frontend\" \"npm start --prefix discord-backend\"",
     "build": "npm run build --prefix discord-frontend",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
